@@ -10,17 +10,13 @@
 
 <?php
 
+    include 'functions.php';
+
     $numbers = array(7,9,8,9,8,8,6);
-
-    function printNumbers($numbers) {
-
-        foreach ($numbers as $number) {
-            echo $number . "<br>";
-        }
-    }
 
     printNumbers($numbers);
 
+    largest($numbers);
 
 
 ?>
