@@ -6,3 +6,8 @@
             echo $value . "<br>";
         }
     }
+
+    function largest($myArray) {
+
+        echo "<p>The highest number is " . max($myArray) . "</p>";
+    }
