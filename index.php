@@ -18,6 +18,10 @@
 
     largest($numbers);
 
+    average($numbers);
+
+    removeDups($numbers);
+
 
 ?>
 

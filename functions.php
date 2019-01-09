@@ -26,3 +26,21 @@
         echo "The average is " . $average;
 
     }
+
+    function removeDups($myArray) {
+
+        $result = array();
+
+        foreach ($myArray as $value) {
+
+            if (!in_array($value, $result)) {
+
+                array_push($result, $value);
+            }
+        }
+
+        $result = implode(", ", $result);
+
+        echo "<br><br> The array without duplicates: [" . $result . "]";
+
+    }
