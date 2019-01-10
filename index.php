@@ -22,6 +22,7 @@
 
     removeDups($numbers);
 
+    distribution($numbers);
 
 ?>
 

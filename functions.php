@@ -44,3 +44,29 @@
         echo "<br><br> The array without duplicates: [" . $result . "]";
 
     }
+
+function distribution($myArray) {
+
+        $counter = array_count_values($myArray);
+        $result = array();
+        $distribution = array();
+
+        foreach ($myArray as $value) {
+
+           if (!in_array($value, $result)) {
+
+               $valueCount = $counter[$value];
+               $result[$value] = $valueCount;
+           }
+        }
+
+        foreach ($result as $key => $value) {
+
+            array_push($distribution, "$key => $value");
+        }
+
+        sort($distribution);
+        $distribution = implode(", ", $distribution);
+
+        echo "<br><br>Distribution: [" . $distribution . "]";
+    }
